@@ -61,6 +61,7 @@
     import api from "@/static/config.json";
     import axios from "axios";
     import vSelect from "vue-select";
+    import "vue-select/dist/vue-select.css";
      
     export default {
         components: {
@@ -136,87 +137,14 @@
         }
     }
     @media only screen and (max-width: 1199px){
-        #banner-header{
-            white-space: nowrap; 
-            font-size: 32pt;
-        }
-        .overlay{
-            height: auto !important;
-        }
         .forecast-weather-container.row {
             width: 100%;
         }
     }
-
-    @media only screen and (max-width: 1400px) {
-        #foot-info{
-            white-space: normal; 
-            font-size: 11pt;
-        }
-        
-    }
-    @media only screen and (max-width: 1200px) {
-        #foot-info{
-            white-space: normal; 
-            font-size: 9pt;
-        }
-        
-    }
-    @media only screen and (max-width: 1000px) {
-        #banner-header{
-            white-space: normal; 
-            font-size: 28pt;
-        }
-        #foot-info{
-            white-space: normal; 
-            font-size: 9pt;
-        }
-        
-    }
-    @media only screen and (max-width: 992px) {
-        #banner-header{
-            white-space: normal; 
-            font-size: 28pt;
-        }
-        #foot-info{
-            white-space: normal; 
-            font-size: 13pt;
-        }
-       
-       
-    }
     @media only screen and (max-width: 768px) {
-        #banner-header{
-            white-space: normal; 
-            font-size: 21pt;
-        }
-        #bannerSub-header{
-            white-space: normal; 
-            font-size: 15pt;
-        }
-        #foot-info{
-            white-space: normal; 
-            font-size: 10pt;
-        }
         .forecast-weather {
             margin-bottom: 20px;
         }
-    }
-    @media only screen and (max-width: 600px) {
-        #banner-header{
-            white-space: normal; 
-            font-size: 18pt;
-        }
-
-        #bannerSub-header{
-            white-space: normal; 
-            font-size: 15pt;
-        }
-        #foot-info{
-            white-space: normal; 
-            font-size: 10pt;
-        }
-       
     }
     @media only screen and (min-width: 576px) {
         .weather-logo {
@@ -231,138 +159,13 @@
             margin-bottom: -10px;
         }
     }
-    @media only screen and (max-width: 550px) {
-        #foot-info{
-            white-space: normal; 
-            font-size: 9pt;
-        }
-       
-    }
-    @media only screen and (max-width: 500px) {
-        #foot-info{
-            white-space: normal; 
-            font-size: 8.5pt;
-        }
-       
-    }
-    @media only screen and (max-width: 480px) {
-        #banner-header{
-            white-space: normal; 
-            font-size: 25pt;
-        }
-    }
-
-    @media (min-height: 480px) and (min-width: 320px) {
-        #overlay{
-        width: 100%;
-        min-height: 100vh;
-        height: auto;
-        }
-
-        #bg-background{
-        width:100%
-        }
-    }
-
-    @media only screen and (max-width: 1900px) {
-        .overlay{
-            padding-bottom:20%;
-        }
-       
-    }
-    @media only screen and (min-width: 1920px) {
-        .bg-background{
-            position:absolute;
-        }
-        .overlay{
-            
-            position:absolute;
-        }
-    }
-    .padding-btn-when-small{
-        padding:1%!important;
-    }
-    .bg-color-btn{
-        background-color:  #66dd4e!important;
-        color:black!important;
-    }
-    .add-padding{
-        padding-top:1%!important;
-        
-    }
-    .overlay {
-        background-size: cover;
-        display: block; 
-        width:100%;
-        height:100%;
-    }
-    .remove-box-shadow{
-        box-shadow: none!important;
-    }
     .bg-background{
         background-image: url('/src/assets/img/weather-app-3.jpg'); 
         background-repeat: no-repeat; 
         background-size: cover;
-        
         width:100%;
         height:100%;
         display: block;
-    }
-    
-    .vl {
-        border-left: 6px solid green;
-        height: 100%;
-    }
-
-    .bg{
-        
-        padding-top: 5%;
-        padding-bottom: 2%;
-    }
-    .bannerHeader{
-        color: #fcfcfc; 
-        font-family: 'Inter-Bold' !important;
-    }
-    .bannerSubHeader{
-        color: #fcfcfc; 
-    }
-    .timezoneList{
-        padding-top: 2%;
-        font-size: 12px;
-    }
-    .bgButtonLogin{
-        background-color:  #002315; ;
-    }
-    h5{
-        padding-top: 13px;
-    }
-
-
-    #banner-header{
-        color: #fcfcfc;
-        /* font-family: Arial,Helvetica,sans-serif; */
-        font-family: 'Inter-Bold' !important;
-        /* font-size: 55px; */
-    }
-
-    #bannerSub-header{
-        color: #fcfcfc;
-        /* font-family: Arial,Helvetica,sans-serif; */
-        font-family: 'Inter-Light' !important;
-        /* font-size: 30px; */
-    }
-
-    .foot-info{
-        text-align: center;
-        color: #fcfcfc;
-        font-size:12pt;
-    }
-
-    .reduced{
-        font-size: 45pt;
-    }
-    .reduced1{
-        font-size: 22pt;
     }
     h1.app-name {
         color: white;
@@ -405,6 +208,7 @@
         flex-direction: row;
         justify-content: space-between;
         margin-top: 40px !important;
+        margin-bottom: 20px;
     }
     .forecast-weather {
         text-align: center;

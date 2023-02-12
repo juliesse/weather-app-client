@@ -15,15 +15,6 @@ Coded by www.creative-tim.com
 */
 import { RouterView } from "vue-router";
 </script>
-<script>
-  import IdleAlert from "@/views/IdleAlert.vue";
-
-  export default {
-      components: {
-          IdleAlert
-      }
-  }
-</script>
 
 <template>
   <router-view />
